@@ -82,6 +82,7 @@ export default class WebSocketClient {
   }
 
   removeListeners () {
+    // removeListeners
     this.onOpen = null
     this.onMessage = null
     this.onClose = null
