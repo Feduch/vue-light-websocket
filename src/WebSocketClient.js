@@ -45,7 +45,7 @@ export default class WebSocketClient {
       if (typeof this.onClose === 'function') {
         this.onClose(evt)
       }
-      if (!evt.wasClean && this.reconnectEnabled) {
+      if (this.reconnectEnabled) {
         this.reconnect()
       }
     }
@@ -57,10 +57,20 @@ export default class WebSocketClient {
   }
 
   disconnect () {
+    try {
+      this.instance.close()
+    } catch (e) {
+      console.warn(`${e} ${this.instance}`)
+    }
     delete this.instance
   }
 
   reconnect () {
+    try {
+      this.instance.close()
+    } catch (e) {
+      console.warn(`${e} ${this.instance}`)
+    }
     delete this.instance
     setTimeout(() => {
       this.connect()

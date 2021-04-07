@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d4f0055a-c11a-4f8a-aca8-0ce9fc7f3617" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/VueLightWebSocket.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/VueLightWebSocket.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/VueLightWebSocket.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/VueLightWebSocket.module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebSocketClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebSocketClient.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,15 @@
       <updated>1607878679604</updated>
       <workItem from="1607878680717" duration="3706000" />
       <workItem from="1607882616579" duration="16000" />
+      <workItem from="1607883286204" duration="723000" />
+      <workItem from="1607887162481" duration="1430000" />
+      <workItem from="1607926659069" duration="749000" />
+      <workItem from="1607940890665" duration="686000" />
+      <workItem from="1607947069789" duration="114000" />
+      <workItem from="1608713223031" duration="344000" />
+      <workItem from="1608713769907" duration="45000" />
+      <workItem from="1608714125447" duration="623000" />
+      <workItem from="1613159030434" duration="542000" />
     </task>
     <servers />
   </component>
