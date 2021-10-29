@@ -1,6 +1,7 @@
 export default class WebSocketClient {
   constructor (url, options) {
     this.instance = null
+    this.token = null
     this.isConnected = false
     this.url = url
     this.options = options || this.defaultOptions()
@@ -10,7 +11,7 @@ export default class WebSocketClient {
         this.reconnectInterval = options.reconnectInterval
       }
       // Token
-      this.token = options.token || null
+      this.token = options?.token || null
     }
     // These methods should be defined by components
     this.onOpen = null
@@ -28,12 +29,16 @@ export default class WebSocketClient {
   }
 
   connect () {
-    let token = this.token || null
-    const url = `${this.url}?token=${token}`
+    const token = this.token || null
+    let url = this.url
+    if (token !== null) {
+      url += `?token=${token}`
+    }
     this.instance = new WebSocket(url)
 
     // Socket event listeners
-    // Each event handler also calls the corresponding class method, which can be defined by the component
+    // Each event handler also calls the corresponding class method,
+    // which can be defined by the component
     this.instance.onopen = () => {
       this.isConnected = true
       if (typeof this.onOpen === 'function') {
