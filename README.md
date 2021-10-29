@@ -4,12 +4,13 @@ A simple native reconnecting websocket client for Vue.js.
 
 __If you like or use this project, please consider supporting my work. Thanks! 🙏🏼__
 
-<a href="https://www.buymeacoffee.com/FedorBuzinov" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-black.png" alt="Buy Me A Coffee" width=217 height=51 style="height: 51px !important;width: 217px !important;"></a>
-
+BTC: bc1q0nh53645lfd0xwa35pv90jj05qqlctzhps24ez
+Ethereum: 0x371fA6A4632309Dfe2C835f09D6880eff8fb46A8
+Dogecoin: DU3ZwHXbuZDbhDF7hHXgYmwkC46NTG8qun
 # Install
 
 ```
-npm install vue-simple-websocket --save
+yarn add https://github.com/Feduch/vue-light-websocket.git#refs/tags/v0.0.12
 ```
 
 # Basic Usage
@@ -49,7 +50,6 @@ If the connection is broken, the event handlers will continue to work when recon
 // Component.vue
 export default {
     name: 'Component',
-    //
     created () {
         this.$socketClient.onOpen = () => {
             console.log('socket connected')

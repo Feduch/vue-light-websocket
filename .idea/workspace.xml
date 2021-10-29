@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d4f0055a-c11a-4f8a-aca8-0ce9fc7f3617" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/VueLightWebSocket.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/VueLightWebSocket.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/VueLightWebSocket.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/VueLightWebSocket.module.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +54,7 @@
       <workItem from="1617779326505" duration="569000" />
       <workItem from="1617780021093" duration="159000" />
       <workItem from="1620974973832" duration="254000" />
+      <workItem from="1635519842114" duration="820000" />
     </task>
     <servers />
   </component>
