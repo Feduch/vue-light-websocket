@@ -24,8 +24,9 @@ export default class WebSocketClient {
     }
   }
 
-  connect () {
-    this.instance = new WebSocket(this.url)
+  connect (token) {
+    const url = `${this.url}?token=${token}`
+    this.instance = new WebSocket(url)
 
     // Socket event listeners
     // Each event handler also calls the corresponding class method, which can be defined by the component
