@@ -22,7 +22,8 @@ export default class WebSocketClient {
   defaultOptions () {
     return {
       reconnectEnabled: false,
-      reconnectInterval: 0
+      reconnectInterval: 0,
+      token: null
     }
   }
 
