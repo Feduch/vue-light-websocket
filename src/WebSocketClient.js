@@ -9,6 +9,8 @@ export default class WebSocketClient {
       if (this.reconnectEnabled) {
         this.reconnectInterval = options.reconnectInterval
       }
+      // Token
+      this.token = options.token || null
     }
     // These methods should be defined by components
     this.onOpen = null
@@ -24,8 +26,8 @@ export default class WebSocketClient {
     }
   }
 
-  connect (token) {
-    const url = `${this.url}?token=${token}`
+  connect () {
+    const url = `${this.url}?token=${this.token}`
     this.instance = new WebSocket(url)
 
     // Socket event listeners
