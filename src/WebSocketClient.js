@@ -28,7 +28,8 @@ export default class WebSocketClient {
   }
 
   connect () {
-    const url = `${this.url}?token=${this.token}`
+    let token = this.token || null
+    const url = `${this.url}?token=${token}`
     this.instance = new WebSocket(url)
 
     // Socket event listeners
@@ -61,6 +62,11 @@ export default class WebSocketClient {
   }
 
   disconnect () {
+    try {
+      WebSocket.close()
+    } catch (e) {
+      console.warn(`WebSocket close ${e}`)
+    }
     try {
       this.instance.close()
     } catch (e) {
