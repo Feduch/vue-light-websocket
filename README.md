@@ -2,7 +2,6 @@
 
 A simple native reconnecting websocket client for Vue.js.
 
-__If you like or use this project, please consider supporting my work. Thanks! 🙏🏼__
 
 # Install
 
