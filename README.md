@@ -4,12 +4,6 @@ A simple native reconnecting websocket client for Vue.js.
 
 __If you like or use this project, please consider supporting my work. Thanks! 🙏🏼__
 
-BTC: bc1q0nh53645lfd0xwa35pv90jj05qqlctzhps24ez
-
-Ethereum: 0x371fA6A4632309Dfe2C835f09D6880eff8fb46A8
-
-Dogecoin: DU3ZwHXbuZDbhDF7hHXgYmwkC46NTG8qun
-
 # Install
 
 ```
